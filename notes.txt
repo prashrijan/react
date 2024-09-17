@@ -6,3 +6,7 @@ create-react-app => utility -> takes too long
 
 vite => bundler
 npm create vite@latest 
+
+<></> this is called fragments cause can only return one elements
+few library forces to write keep the file to .jsx when returning html elem
+keep the components uppercase 

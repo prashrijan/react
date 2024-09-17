@@ -1,8 +1,12 @@
+import Nav from "./navbar"
 
 function App() {
 
   return (
-    <h1>Hello world with vite | Prashrijan Shrestha</h1>
+    <> 
+      <Nav />
+      <h2>This is main</h2>
+    </>
   )
 }
 
