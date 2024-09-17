@@ -10,3 +10,7 @@ npm create vite@latest
 <></> this is called fragments cause can only return one elements
 few library forces to write keep the file to .jsx when returning html elem
 keep the components uppercase 
+
+
+to inject expression we need to put {}, we cant put javascript code into into
+evaluated expression
