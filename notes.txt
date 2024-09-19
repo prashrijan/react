@@ -1,5 +1,5 @@
 npm => node package manager
-npmx => node package executor
+npx => node package executor
 
 create-react-app => utility -> takes too long
 
@@ -12,5 +12,9 @@ few library forces to write keep the file to .jsx when returning html elem
 keep the components uppercase 
 
 
-to inject expression we need to put {}, we cant put javascript code into into
-evaluated expression
+- to inject expression we need to put {}, we cant put javascript code into this
+- evaluated expression
+
+- React looks after the UI updation part
+- Hooks let you use different react features
+- useState Hooks remembers the information like user input 
