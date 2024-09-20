@@ -23,7 +23,9 @@ function App() {
         pass += str.charAt(char)
     }
     setPassword(pass)
-  }, [length, numberAllowed, charAllowed, setPassword])
+    setButtonColor("Blue")
+    setButtonText("Copy")
+  }, [length, numberAllowed, charAllowed, setPassword, setButtonColor, setButtonText])
 
   const copyPasswordToClipBoard = useCallback(() => {
     setButtonText("Copied")
