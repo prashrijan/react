@@ -8,8 +8,15 @@ function App() {
   let sculpture = sculptureList[index]
 
   function handleClick(){
-    setIndex(index + 1)    
+    setIndex(index + 1)
+    console.log(index + 1);
+        
   }
+
+  function handlePrevClick(){
+    setIndex(index - 1)
+  }
+
   function handleMoreClick(){
     setShowMore(prev => !prev)
   }
@@ -32,12 +39,23 @@ function App() {
         onClick={handleMoreClick}>
         {showMore ? 'Hide' : 'Show'} details
       </button>
-      {showMore && <p className='w-2/4 text-center'>{sculpture.description}</p>}    
-      <button 
-        className='bg-orange-500 text-white px-3 py-2 rounded-lg text-xl '
-        onClick={handleClick}>
-        Next
-      </button>
+      {showMore && <p className='w-2/4 text-center'>{sculpture.description}</p>}
+      <div className="btn-container flex gap-3">
+        <button 
+          className='bg-orange-500 text-white px-3 py-2 rounded-lg text-xl cursor-pointer disabled:bg-slate-300'
+          onClick={handlePrevClick}
+          disabled = {index <=0 }
+          >
+          Previous
+        </button>
+        <button 
+          className='bg-orange-500 text-white px-3 py-2 rounded-lg text-xl cursor-pointer disabled:bg-slate-300'
+          onClick={handleClick}
+          disabled = {index === 11}
+          >
+          Next
+        </button>
+      </div>
     </div>
     </>
   )
