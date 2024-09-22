@@ -9,7 +9,6 @@ function App() {
 
   function handleClick(){
     setIndex(index + 1)
-    console.log(index + 1);
         
   }
 
@@ -44,7 +43,7 @@ function App() {
         <button 
           className='bg-orange-500 text-white px-3 py-2 rounded-lg text-xl cursor-pointer disabled:bg-slate-300'
           onClick={handlePrevClick}
-          disabled = {index <=0 }
+          disabled = {index <= 0 }
           >
           Previous
         </button>
